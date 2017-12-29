@@ -1,0 +1,15 @@
+{
+  "web":
+  {
+    "base_url": "http://automationpractice.com/index.php",
+    "reg_email": "tes576592008@test7845.com",
+    "password": ""
+  },
+  "db":
+  {
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "db": "test"
+  }
+}
