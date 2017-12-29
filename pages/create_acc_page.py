@@ -24,7 +24,7 @@ class CreateAccount(AuthenticationPage):
 
     @property
     def emailCreate_input(self):
-        pass
+        return self.driver.find_element_by_id('email')
 
     @property
     def passwd_input(self):
@@ -65,3 +65,43 @@ class CreateAccount(AuthenticationPage):
     @property
     def address1Add_input(self):
         return self.driver.find_element_by_id('address1')
+
+    @property
+    def address2Add_input(self):
+        return self.driver.find_element_by_id('address2')
+
+    @property
+    def cityAdd_input(self):
+        return self.driver.find_element_by_id('city')
+
+    @property
+    def stateAdd_select(self):
+        return self.driver.find_element_by_id('id_state')
+
+    @property
+    def postcodeAdd_select(self):
+        return self.driver.find_element_by_id('postcode')
+
+    @property
+    def countryAdd_select(self):
+        return self.driver.find_element_by_id('id_country')
+
+    @property
+    def additionInfoAdd_input(self):
+        return self.driver.find_element_by_id('other')
+
+    @property
+    def homePhoneAdd_input(self):
+        return self.driver.find_element_by_id('phone')
+
+    @property
+    def mobilePhoneAdd_input(self):
+        return self.driver.find_element_by_id('phone_mobile')
+
+    @property
+    def aliasAdd_input(self):
+        return self.driver.find_element_by_id('alias')
+
+    @property
+    def submitAccount_input(self):
+        return self.driver.find_element_by_id('submitAccount')
