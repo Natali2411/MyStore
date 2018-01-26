@@ -15,3 +15,4 @@ def reg(config):
     driver = webdriver.Firefox()
     app = MyStore(driver=driver, base_url=config["web"]["base_url"])
     yield app
+    #app.quit()

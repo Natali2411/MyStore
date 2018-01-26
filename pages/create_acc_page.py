@@ -48,7 +48,7 @@ class CreateAccount(AuthenticationPage):
 
     @property
     def recieveOffer_check(self):
-        return self.driver.find_element_by_id('option')
+        return self.driver.find_element_by_id('optin')
 # Address block
     @property
     def firstnameAdd_input(self):
@@ -103,5 +103,5 @@ class CreateAccount(AuthenticationPage):
         return self.driver.find_element_by_id('alias')
 
     @property
-    def submitAccount_input(self):
+    def register_but(self):
         return self.driver.find_element_by_id('submitAccount')
