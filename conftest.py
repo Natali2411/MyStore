@@ -12,7 +12,7 @@ def config():
 
 @pytest.fixture()
 def reg(config):
-    driver = webdriver.Firefox()
+    driver = webdriver.Chrome()
     app = MyStore(driver=driver, base_url=config["web"]["base_url"])
     yield app
     #app.quit()

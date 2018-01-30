@@ -79,7 +79,7 @@ class CreateAccount(AuthenticationPage):
         return self.driver.find_element_by_id('id_state')
 
     @property
-    def postcodeAdd_select(self):
+    def postcodeAdd_input(self):
         return self.driver.find_element_by_id('postcode')
 
     @property
@@ -88,7 +88,7 @@ class CreateAccount(AuthenticationPage):
 
     @property
     def additionInfoAdd_input(self):
-        return self.driver.find_element_by_id('other')
+        return self.driver.find_element_by_xpath('//*[@id="other"]')
 
     @property
     def homePhoneAdd_input(self):

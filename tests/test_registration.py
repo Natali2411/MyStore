@@ -10,4 +10,4 @@ def test_reg_positive(reg, config):
     assert reg.create_acc.firstnameAdd_input.get_attribute("value") ==  reg.create_acc.firstname_input.get_attribute("value")
     assert reg.create_acc.lastnameAdd_input.get_attribute("value") == reg.create_acc.lastname_input.get_attribute("value")
     reg.regAccount_step3(companyAdd='Luxoft', add1='Address1', add2='Address1', cityAdd='Kyiv', state='5',
-                     postcode='00000', country='21', additionInfo=None, homePhoneAdd='2125484', mobilePhoneAdd='658542', aliasAdd='54854545')
+                     postcode='00000', country='21', additionInfo='test1', homePhoneAdd='2125484', mobilePhoneAdd='658542', aliasAdd='54854545')
