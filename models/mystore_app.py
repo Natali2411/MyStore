@@ -5,6 +5,8 @@ from pages.start_page import StartPage
 from pages.authentication_page import AuthenticationPage
 from pages.create_acc_page import CreateAccount
 from selenium.webdriver.support.ui import Select
+from pages.myaccount_page import MyAccount
+
 
 class MyStore():
     def __init__(self, driver, base_url):
@@ -16,6 +18,8 @@ class MyStore():
         self.start_page = StartPage(driver, base_url)
         self.authent_page = AuthenticationPage(driver, base_url)
         self.create_acc = CreateAccount(driver, base_url)
+        self.myAcc = MyAccount(driver, base_url)
+
     def quit(self):
         self.wd.quit()
 
@@ -76,4 +80,4 @@ class MyStore():
         self.create_acc.mobilePhoneAdd_input.send_keys(mobilePhoneAdd)
         self.create_acc.aliasAdd_input.clear()
         self.create_acc.aliasAdd_input.send_keys(aliasAdd)
-        #self.create_acc.register_but.click()
+        self.create_acc.register_but.click()
