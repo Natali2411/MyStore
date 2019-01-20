@@ -1,7 +1,7 @@
 from selenium import webdriver
 import pytest
 import json
-import os
+import os, time
 from models.mystore_app import MyStore
 import random
 import string
