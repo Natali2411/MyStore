@@ -7,3 +7,5 @@ def test_123(reg):
     print("The main page was loaded")
     time.sleep(5)
     reg.wd.find_element_by_xpath('//*[@id="block_top_menu"]/ul/li[2]/a').click()
+    reg.wd.find_element_by_xpath('//*[@id="block_top_menu"]/ul/li[1]/a').click()
+
